@@ -1,0 +1,44 @@
+.webc-scroll {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 1px 1px var(--border-color);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.webc-scroll-container {
+  overflow: auto;
+  scrollbar-width: none;
+  height: 100%;
+}
+
+.webc-scroll-content {
+  padding-bottom: 20px;
+}
+
+.webc-scrollbar {
+  width: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--scroll-bg-color);
+  transition: all .18s;
+  z-index: 9;
+}
+
+.webc-scrollbar:hover,
+.webc-scrollbar:active {
+  width: 12px !important;
+}
+
+.webc-scrollbar-thumb {
+  width: 100%;
+  background-color: color-mix(in srgb, var(--li-color), transparent 60%);
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+}
